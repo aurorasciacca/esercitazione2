@@ -16,6 +16,12 @@
         <span class="marchio-sicana">Sicana</span>
     </div>
 
+         <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <nav class="main-nav">
        <a href="index.html" class="nav-button active">HOME</a>
     <a href="piazze.html" class="nav-button">PIAZZE</a>
@@ -114,6 +120,13 @@ Clicca sulle province evidenziate in basso per aprire le porte di queste meravig
             <button>Registrati</button>
         </div>
     </footer>
+
+    <script>
+function toggleMenu() {
+    const nav = document.querySelector('.main-nav');
+    nav.classList.toggle('open');
+}
+</script>
     
 </body>
 </html>

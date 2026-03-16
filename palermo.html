@@ -16,6 +16,12 @@
         <span class="marchio-sicana">Sicana</span>
     </div>
 
+     <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <nav class="main-nav">
        <a href="index.html" class="nav-button">HOME</a>
     <a href="piazze.html" class="nav-button">PIAZZE</a>
@@ -105,6 +111,13 @@ Le Statue Parlanti: Ogni monumento della piazza racconta un pezzo di Unità d'It
             <button>Registrati</button>
         </div>
     </footer>
+
+    <script>
+function toggleMenu() {
+    const nav = document.querySelector('.main-nav');
+    nav.classList.toggle('open');
+}
+</script>
 
 <body>
     
